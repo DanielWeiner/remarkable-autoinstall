@@ -1,6 +1,6 @@
 set -e
 APPDIR=${APPDIR:-/home/root/apps}
-REPOURL="https://raw.githubusercontent.com/ddvk/remarkable-autoinstall"
+REPOURL="https://raw.githubusercontent.com/DanielWeiner/remarkable-autoinstall"
 mkdir -p $APPDIR
 mkdir -p ~/.config/draft
 mkdir -p ~/scripts
