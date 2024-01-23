@@ -1,8 +1,7 @@
 set -e
 APPDIR=${APPDIR:-/home/root/apps}
 REPOURL="https://raw.githubusercontent.com/ddvk/remarkable-autoinstall/master/rm2"
-RM2FBREPO="https://github.com/ddvk/remarkable2-framebuffer/releases/latest/download"
-KOREADER="https://github.com/koreader/koreader/releases/download/v2022.10/koreader-remarkable-v2022.10.zip"
+KOREADER="https://github.com/koreader/koreader/releases/download/v2024.01/koreader-remarkable-v2024.01.zip"
 
 mkdir -p $APPDIR
 mkdir -p ~/scripts
@@ -17,13 +16,6 @@ if [ ! -d "$APPDIR/koreader" ]; then
     unzip /tmp/koreader.zip -d $APPDIR
 fi
 
-if [ ! -d "~/librm2fb_client.so.1.0.1" ]; then
-    wget "$RM2FBREPO/librm2fb_client.so.1.0.1" -O ~/librm2fb_client.so.1.0.1
-fi
-
-if [ ! -d "~/librm2fb_server.so.1.0.1" ]; then
-    wget "$RM2FBREPO/librm2fb_server.so.1.0.1" -O ~/librm2fb_server.so.1.0.1
-fi
 if [ ! -d "~/apps/touchinjector" ]; then
     wget "$REPOURL/apps/touchinjector" -O ~/apps/touchinjector
 fi
@@ -36,7 +28,6 @@ fi
 chmod +x ~/scripts/swipeup.sh
 chmod +x ~/scripts/ko.sh
 chmod +x ~/apps/touchinjector
-
 
 echo "udev rule"
 cat << EOF > /lib/udev/rules.d/15-systemd-input.rules
