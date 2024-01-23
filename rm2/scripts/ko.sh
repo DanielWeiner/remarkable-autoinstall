@@ -8,7 +8,7 @@ if [ ! -z "`pidof rm2fb-server`"]; then
     killall rm2fb-server
 fi
 
-LD_PRELOAD=/home/root/librm2fb_server.so.1.0.1 /usr/bin/xochitl &
+LD_PRELOAD=/opt/lib/librm2fb_server.so.1.0.1 /usr/bin/xochitl &
 sleep 2
 
 export KO_DONT_SET_DEPTH=1
