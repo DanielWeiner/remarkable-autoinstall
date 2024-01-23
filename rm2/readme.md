@@ -3,7 +3,7 @@
 ## Install
 
 ```
-sh -c "$(wget https://raw.githubusercontent.com/ddvk/remarkable-autoinstall/master/rm2/auto_rm2.sh -O-)" 
+sh -c "$(wget https://raw.githubusercontent.com/DanielWeiner/remarkable-autoinstall/master/rm2/auto_rm2.sh -O-)" 
 ```
 
 ## Usage
