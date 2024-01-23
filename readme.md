@@ -5,7 +5,7 @@
 ## Install
 
 ```
-sh -c "$(wget https://raw.githubusercontent.com/ddvk/remarkable-autoinstall/master/auto.sh -O-)" 
+sh -c "$(wget https://raw.githubusercontent.com/DanielWeiner/remarkable-autoinstall/master/auto.sh -O-)" 
 ```
 
 ## Usage
